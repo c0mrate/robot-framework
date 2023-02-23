@@ -1,45 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.9.13 on win32)" generated="20230216 11:53:39.744" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.2 (Python 3.9.13 on win32)" generated="20230223 09:35:47.960" rpa="false" schemaversion="3">
 <suite id="s1" name="Ts-002" source="D:\Testcase\ts-002.robot">
 <test id="s1-t1" name="TS-002: Open Google website with SE + Chrome-Driver" line="12">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>https://account.kmutnb.ac.th/web/user/login</arg>
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230216 11:53:39.951" level="INFO">Opening browser 'chrome' to base url 'https://account.kmutnb.ac.th/web/user/login'.</msg>
-<status status="PASS" starttime="20230216 11:53:39.950" endtime="20230216 11:53:42.880"/>
+<msg timestamp="20230223 09:35:48.257" level="INFO">Opening browser 'chrome' to base url 'https://account.kmutnb.ac.th/web/user/login'.</msg>
+<status status="PASS" starttime="20230223 09:35:48.257" endtime="20230223 09:35:52.733"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id=loginform-username</arg>
 <arg>s6307012660127</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230216 11:53:42.881" level="INFO">Typing text 's6307012660127' into text field 'id=loginform-username'.</msg>
-<status status="PASS" starttime="20230216 11:53:42.881" endtime="20230216 11:53:42.964"/>
+<msg timestamp="20230223 09:35:52.734" level="INFO">Typing text 's6307012660127' into text field 'id=loginform-username'.</msg>
+<status status="PASS" starttime="20230223 09:35:52.734" endtime="20230223 09:35:52.814"/>
 </kw>
 <kw name="Input Password" library="SeleniumLibrary">
 <arg>id=loginform-password</arg>
 <arg>1MoolyFTW</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20230216 11:53:42.965" level="INFO">Typing password into text field 'id=loginform-password'.</msg>
-<msg timestamp="20230216 11:53:43.002" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20230216 11:53:43.044" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20230216 11:53:42.965" endtime="20230216 11:53:43.044"/>
+<msg timestamp="20230223 09:35:52.815" level="INFO">Typing password into text field 'id=loginform-password'.</msg>
+<msg timestamp="20230223 09:35:52.847" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20230223 09:35:52.892" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20230223 09:35:52.814" endtime="20230223 09:35:52.892"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>xpath=//button[@type='submit']</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20230216 11:53:43.045" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
-<status status="PASS" starttime="20230216 11:53:43.045" endtime="20230216 11:53:43.098"/>
+<msg timestamp="20230223 09:35:52.893" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
+<status status="PASS" starttime="20230223 09:35:52.892" endtime="20230223 09:35:52.951"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230216 11:53:45.109" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230216 11:53:43.099" endtime="20230216 11:53:45.109"/>
+<msg timestamp="20230223 09:35:54.961" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230223 09:35:52.952" endtime="20230223 09:35:54.961"/>
 </kw>
-<status status="PASS" starttime="20230216 11:53:39.950" endtime="20230216 11:53:45.109"/>
+<status status="PASS" starttime="20230223 09:35:48.257" endtime="20230223 09:35:54.961"/>
 </test>
-<status status="PASS" starttime="20230216 11:53:39.744" endtime="20230216 11:53:45.109"/>
+<status status="PASS" starttime="20230223 09:35:47.960" endtime="20230223 09:35:54.961"/>
 </suite>
 <statistics>
 <total>

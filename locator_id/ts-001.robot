@@ -14,6 +14,6 @@ Open he Best Webbrower
 TC-001: Testing open the best website
     Open he Best Webbrower        ${url}                            ${brower}
     Input Text                    xpath=//input[@type='text']       6307012660020           
-    Input Password                xpath=//input[@type='password']   1104300418061        
+    Input Password                xpath=//input[@type='password']   password        
     Click Button                  xpath=//input[@type='submit']                             
     Sleep                         2

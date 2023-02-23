@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.9.13 on win32)" generated="20230223 10:24:48.142" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.2 (Python 3.9.13 on win32)" generated="20230223 10:35:32.074" rpa="false" schemaversion="3">
 <suite id="s1" name="Ts-001" source="D:\Testcase\locator_id\ts-001.robot">
 <test id="s1-t1" name="TC-001: Testing open the best website" line="14">
 <kw name="Open he Best Webbrower">
@@ -9,42 +9,42 @@
 <arg>${url}</arg>
 <arg>${brower}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230223 10:24:48.345" level="INFO">Opening browser 'chrome' to base url 'https://account.kmutnb.ac.th/web/user/login'.</msg>
-<status status="PASS" starttime="20230223 10:24:48.345" endtime="20230223 10:24:51.546"/>
+<msg timestamp="20230223 10:35:32.262" level="INFO">Opening browser 'chrome' to base url 'http://klogic2.kmutnb.ac.th:8080/kris/index.jsp'.</msg>
+<status status="PASS" starttime="20230223 10:35:32.262" endtime="20230223 10:35:34.892"/>
 </kw>
-<status status="PASS" starttime="20230223 10:24:48.345" endtime="20230223 10:24:51.546"/>
+<status status="PASS" starttime="20230223 10:35:32.262" endtime="20230223 10:35:34.892"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
-<arg>id=loginform-username</arg>
-<arg>s6307012660127</arg>
+<arg>xpath=//input[@type='text']</arg>
+<arg>6307012660020</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230223 10:24:51.548" level="INFO">Typing text 's6307012660127' into text field 'id=loginform-username'.</msg>
-<status status="PASS" starttime="20230223 10:24:51.547" endtime="20230223 10:24:51.626"/>
+<msg timestamp="20230223 10:35:34.893" level="INFO">Typing text '6307012660020' into text field 'xpath=//input[@type='text']'.</msg>
+<status status="PASS" starttime="20230223 10:35:34.893" endtime="20230223 10:35:34.971"/>
 </kw>
 <kw name="Input Password" library="SeleniumLibrary">
-<arg>id=loginform-password</arg>
-<arg>1MoolyFTW</arg>
+<arg>xpath=//input[@type='password']</arg>
+<arg>1104300418061</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20230223 10:24:51.627" level="INFO">Typing password into text field 'id=loginform-password'.</msg>
-<msg timestamp="20230223 10:24:51.659" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20230223 10:24:51.700" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20230223 10:24:51.626" endtime="20230223 10:24:51.700"/>
+<msg timestamp="20230223 10:35:34.972" level="INFO">Typing password into text field 'xpath=//input[@type='password']'.</msg>
+<msg timestamp="20230223 10:35:35.007" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20230223 10:35:35.050" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20230223 10:35:34.971" endtime="20230223 10:35:35.050"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
-<arg>xpath=//button[@type='submit']</arg>
+<arg>xpath=//input[@type='submit']</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20230223 10:24:51.701" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
-<status status="PASS" starttime="20230223 10:24:51.700" endtime="20230223 10:24:51.757"/>
+<msg timestamp="20230223 10:35:35.051" level="INFO">Clicking button 'xpath=//input[@type='submit']'.</msg>
+<status status="PASS" starttime="20230223 10:35:35.050" endtime="20230223 10:35:35.446"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230223 10:24:53.763" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230223 10:24:51.757" endtime="20230223 10:24:53.763"/>
+<msg timestamp="20230223 10:35:37.460" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230223 10:35:35.447" endtime="20230223 10:35:37.460"/>
 </kw>
-<status status="PASS" starttime="20230223 10:24:48.345" endtime="20230223 10:24:53.765"/>
+<status status="PASS" starttime="20230223 10:35:32.262" endtime="20230223 10:35:37.460"/>
 </test>
-<status status="PASS" starttime="20230223 10:24:48.142" endtime="20230223 10:24:53.768"/>
+<status status="PASS" starttime="20230223 10:35:32.074" endtime="20230223 10:35:37.460"/>
 </suite>
 <statistics>
 <total>

@@ -2,7 +2,7 @@
 Library    SeleniumLibrary
 
 *** Variables ***
-${url}        https://account.kmutnb.ac.th/web/user/login
+${url}        http://klogic2.kmutnb.ac.th:8080/kris/index.jsp
 ${brower}        chrome
 
 *** Keywords ***
@@ -12,8 +12,8 @@ Open he Best Webbrower
 
 *** Test Cases ***
 TC-001: Testing open the best website
-    Open he Best Webbrower        ${url}                    ${brower}
-    Input Text                    id=loginform-username     s6307012660127           
-    Input Password                id=loginform-password     password        
-    Click Button                  xpath=//button[@type='submit']                             
+    Open he Best Webbrower        ${url}                            ${brower}
+    Input Text                    xpath=//input[@type='text']       6307012660020           
+    Input Password                xpath=//input[@type='password']   password        
+    Click Button                  xpath=//input[@type='submit']                             
     Sleep                         2

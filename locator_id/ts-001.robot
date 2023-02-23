@@ -14,6 +14,6 @@ Open he Best Webbrower
 TC-001: Testing open the best website
     Open he Best Webbrower        ${url}                    ${brower}
     Input Text                    id=loginform-username     s6307012660127           
-    Input Password                id=loginform-password     1MoolyFTW         
+    Input Password                id=loginform-password     password        
     Click Button                  xpath=//button[@type='submit']                             
     Sleep                         2

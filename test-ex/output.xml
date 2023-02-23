@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.9.13 on win32)" generated="20230223 11:27:12.753" rpa="false" schemaversion="3">
-<suite id="s1" name="Test-Ex03" source="D:\Testcase\test-ex\test-ex03.robot">
+<robot generator="Robot 6.0.2 (Python 3.9.13 on win32)" generated="20230223 12:09:14.359" rpa="false" schemaversion="3">
+<suite id="s1" name="Test-Ex01-Assignment" source="D:\Testcase\test-ex\test-ex01-assignment.robot">
 <test id="s1-t1" name="TC-001: Testing open the best website" line="14">
 <kw name="Open he Best Webbrower">
 <arg>${url}</arg>
@@ -9,36 +9,62 @@
 <arg>${url}</arg>
 <arg>${brower}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230223 11:27:12.956" level="INFO">Opening browser 'chrome' to base url 'file:///C:/Users/5A09-02/Desktop/ep01/ex03.html'.</msg>
-<status status="PASS" starttime="20230223 11:27:12.956" endtime="20230223 11:27:14.207"/>
+<msg timestamp="20230223 12:09:14.571" level="INFO">Opening browser 'chrome' to base url 'file:///C:/Users/5A09-02/Desktop/ep01/ep01_small_excercise.html'.</msg>
+<status status="PASS" starttime="20230223 12:09:14.571" endtime="20230223 12:09:15.756"/>
 </kw>
-<status status="PASS" starttime="20230223 11:27:12.956" endtime="20230223 11:27:14.207"/>
+<status status="PASS" starttime="20230223 12:09:14.571" endtime="20230223 12:09:15.756"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
-<arg>xpath=//div[contains(@v,'username')]/input</arg>
-<arg>test</arg>
+<arg>id=username-box</arg>
+<arg>user</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230223 11:27:14.209" level="INFO">Typing text 'test' into text field 'xpath=//div[contains(@v,'username')]/input'.</msg>
-<status status="PASS" starttime="20230223 11:27:14.208" endtime="20230223 11:27:14.295"/>
+<msg timestamp="20230223 12:09:15.757" level="INFO">Typing text 'user' into text field 'id=username-box'.</msg>
+<status status="PASS" starttime="20230223 12:09:15.757" endtime="20230223 12:09:15.841"/>
 </kw>
 <kw name="Input Password" library="SeleniumLibrary">
-<arg>xpath=//div[contains(@v,'password')]/input</arg>
-<arg>test</arg>
+<arg>xpath=//div[@v='password']/input</arg>
+<arg>passwd</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20230223 11:27:14.296" level="INFO">Typing password into text field 'xpath=//div[contains(@v,'password')]/input'.</msg>
-<msg timestamp="20230223 11:27:14.331" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20230223 11:27:14.370" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20230223 11:27:14.295" endtime="20230223 11:27:14.370"/>
+<msg timestamp="20230223 12:09:15.842" level="INFO">Typing password into text field 'xpath=//div[@v='password']/input'.</msg>
+<msg timestamp="20230223 12:09:15.876" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20230223 12:09:15.910" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20230223 12:09:15.842" endtime="20230223 12:09:15.910"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[@doppio='nickname']</arg>
+<arg>Eed</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230223 12:09:15.911" level="INFO">Typing text 'Eed' into text field 'xpath=//input[@doppio='nickname']'.</msg>
+<status status="PASS" starttime="20230223 12:09:15.910" endtime="20230223 12:09:15.984"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>id=company</arg>
+<arg>doppio</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20230223 12:09:15.985" level="INFO">Selecting options from selection list 'id=company' by value doppio.</msg>
+<status status="PASS" starttime="20230223 12:09:15.984" endtime="20230223 12:09:16.040"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>id=op1</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20230223 12:09:16.041" level="INFO">Selecting checkbox 'id=op1'.</msg>
+<status status="PASS" starttime="20230223 12:09:16.041" endtime="20230223 12:09:16.097"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//button[@id]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230223 12:09:16.098" level="INFO">Clicking button 'xpath=//button[@id]'.</msg>
+<status status="PASS" starttime="20230223 12:09:16.098" endtime="20230223 12:09:16.447"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230223 11:27:16.384" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230223 11:27:14.370" endtime="20230223 11:27:16.384"/>
+<msg timestamp="20230223 12:09:18.457" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230223 12:09:16.448" endtime="20230223 12:09:18.457"/>
 </kw>
-<status status="PASS" starttime="20230223 11:27:12.956" endtime="20230223 11:27:16.384"/>
+<status status="PASS" starttime="20230223 12:09:14.571" endtime="20230223 12:09:18.459"/>
 </test>
-<status status="PASS" starttime="20230223 11:27:12.753" endtime="20230223 11:27:16.384"/>
+<status status="PASS" starttime="20230223 12:09:14.374" endtime="20230223 12:09:18.463"/>
 </suite>
 <statistics>
 <total>
@@ -47,7 +73,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Test-Ex03">Test-Ex03</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test-Ex01-Assignment">Test-Ex01-Assignment</stat>
 </suite>
 </statistics>
 <errors>

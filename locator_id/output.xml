@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.9.13 on win32)" generated="20230223 11:00:37.911" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.2 (Python 3.9.13 on win32)" generated="20230223 11:14:19.731" rpa="false" schemaversion="3">
 <suite id="s1" name="Ts-002" source="D:\Testcase\locator_id\ts-002.robot">
 <test id="s1-t1" name="TC-001: Testing open the best website" line="14">
 <kw name="Open he Best Webbrower">
@@ -9,45 +9,95 @@
 <arg>${url}</arg>
 <arg>${brower}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230223 11:00:38.114" level="INFO">Opening browser 'chrome' to base url 'file:///C:/Users/5A09-02/Desktop/ep01/ex01.html'.</msg>
-<status status="PASS" starttime="20230223 11:00:38.114" endtime="20230223 11:00:39.320"/>
+<msg timestamp="20230223 11:14:19.935" level="INFO">Opening browser 'chrome' to base url 'file:///C:/Users/5A09-02/Desktop/ep01/ex02.html'.</msg>
+<status status="PASS" starttime="20230223 11:14:19.935" endtime="20230223 11:14:21.275"/>
 </kw>
-<status status="PASS" starttime="20230223 11:00:38.114" endtime="20230223 11:00:39.320"/>
+<status status="PASS" starttime="20230223 11:14:19.935" endtime="20230223 11:14:21.275"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
-<arg>xpath=//input[@v='user']</arg>
+<arg>xpath=//div[@v='username']</arg>
 <arg>test</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230223 11:00:39.321" level="INFO">Typing text 'test' into text field 'xpath=//input[@v='user']'.</msg>
-<status status="PASS" starttime="20230223 11:00:39.321" endtime="20230223 11:00:39.402"/>
+<msg timestamp="20230223 11:14:21.276" level="INFO">Typing text 'test' into text field 'xpath=//div[@v='username']'.</msg>
+<msg timestamp="20230223 11:14:21.492" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230223 11:14:21.492" level="FAIL">InvalidElementStateException: Message: invalid element state
+  (Session info: chrome=110.0.5481.105)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x005737D3]
+	(No symbol) [0x00508B81]
+	(No symbol) [0x0040B230]
+	(No symbol) [0x004352B1]
+	(No symbol) [0x0045B41C]
+	(No symbol) [0x00432B96]
+	(No symbol) [0x0045B774]
+	(No symbol) [0x00471215]
+	(No symbol) [0x0045B216]
+	(No symbol) [0x00430D97]
+	(No symbol) [0x0043253D]
+	GetHandleVerifier [0x007EABF2+2510930]
+	GetHandleVerifier [0x00818EC1+2700065]
+	GetHandleVerifier [0x0081C86C+2714828]
+	GetHandleVerifier [0x00623480+645344]
+	(No symbol) [0x00510FD2]
+	(No symbol) [0x00516C68]
+	(No symbol) [0x00516D4B]
+	(No symbol) [0x00520D6B]
+	BaseThreadInitThunk [0x767B6BD9+25]
+	RtlGetFullPathName_UEx [0x77668FD2+1218]
+	RtlGetFullPathName_UEx [0x77668F9D+1165]
+</msg>
+<status status="FAIL" starttime="20230223 11:14:21.276" endtime="20230223 11:14:21.492"/>
 </kw>
 <kw name="Input Password" library="SeleniumLibrary">
-<arg>xpath=//input[@v='password']</arg>
+<arg>xpath=//div[@v='password']</arg>
 <arg>test</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20230223 11:00:39.403" level="INFO">Typing password into text field 'xpath=//input[@v='password']'.</msg>
-<msg timestamp="20230223 11:00:39.436" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20230223 11:00:39.470" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20230223 11:00:39.402" endtime="20230223 11:00:39.470"/>
+<status status="NOT RUN" starttime="20230223 11:14:21.492" endtime="20230223 11:14:21.492"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230223 11:00:41.484" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230223 11:00:39.470" endtime="20230223 11:00:41.484"/>
+<status status="NOT RUN" starttime="20230223 11:14:21.507" endtime="20230223 11:14:21.507"/>
 </kw>
-<status status="PASS" starttime="20230223 11:00:38.114" endtime="20230223 11:00:41.484"/>
+<status status="FAIL" starttime="20230223 11:14:19.935" endtime="20230223 11:14:21.507">InvalidElementStateException: Message: invalid element state
+  (Session info: chrome=110.0.5481.105)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x005737D3]
+	(No symbol) [0x00508B81]
+	(No symbol) [0x0040B230]
+	(No symbol) [0x004352B1]
+	(No symbol) [0x0045B41C]
+	(No symbol) [0x00432B96]
+	(No symbol) [0x0045B774]
+	(No symbol) [0x00471215]
+	(No symbol) [0x0045B216]
+	(No symbol) [0x00430D97]
+	(No symbol) [0x0043253D]
+	GetHandleVerifier [0x007EABF2+2510930]
+	GetHandleVerifier [0x00818EC1+2700065]
+	GetHandleVerifier [0x0081C86C+2714828]
+	GetHandleVerifier [0x00623480+645344]
+	(No symbol) [0x00510FD2]
+	(No symbol) [0x00516C68]
+	(No symbol) [0x00516D4B]
+	(No symbol) [0x00520D6B]
+	BaseThreadInitThunk [0x767B6BD9+25]
+	RtlGetFullPathName_UEx [0x77668FD2+1218]
+	RtlGetFullPathName_UEx [0x77668F9D+1165]
+</status>
 </test>
-<status status="PASS" starttime="20230223 11:00:37.911" endtime="20230223 11:00:41.484"/>
+<status status="FAIL" starttime="20230223 11:14:19.731" endtime="20230223 11:14:21.507"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Ts-002">Ts-002</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Ts-002">Ts-002</stat>
 </suite>
 </statistics>
 <errors>
